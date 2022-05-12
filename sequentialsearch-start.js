@@ -1,4 +1,4 @@
-/**
+/**9
 	* Scrivere una funzione che ricerchi la prima occorrenza di un determinato
 	* numero in una serie di numeri casuali e restituisca un valore booleano
 	* true se presente, false altrimenti. Mostrare il risultato in console.
@@ -29,4 +29,16 @@ function populateArray() {
 
 populateArray();
 
+
 // INIZIA A SCRIVERE DA QUI
+function searchFirstOccurrence(n){
+	let message = false;
+	arrayOfNumber.forEach(element =>{
+		if(element === n)
+			message = true;
+	});
+	return message;
+}
+
+console.log(arrayOfNumber);
+console.log(searchFirstOccurrence(50));
